@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const name = prompt("Name");
+
+        const random = Math.floor(Math.random() * 100) + 1;
+
+        let number = prompt("Number");
+
+
+        while (parseInt(number) !== random) {
+
+            if (parseInt(number) > random) {
+                alert("It is less");
+            }
+
+            if (parseInt(number) < random) {
+                alert("It is more");
+            }
+
+            number = prompt("new number");
+
+        }
+
+        if (parseInt(number) === random) {
+            alert(name + "wins");
+        }
+
+    </script>
+</body>
+
+</html>
